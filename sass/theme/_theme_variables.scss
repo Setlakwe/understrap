@@ -2,5 +2,31 @@
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
 // Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
 
+$primary-color: #111;
+$color-text-main: rgba(14, 14, 14, 0.8);
+$white: #fff;
+$primary-font: 'Poppins', sans-serif;
+$main-color: #111;
+$body-color: #666;
 
-$primary: #6f31cd; // Thats a sample how you could change a BootStrap variable.
+$active-colorblue:    #9fbfe0;
+$active-colorgreen:   #abc84a;
+$active-colororange:  #ed8b5c;
+$active-colorgreen2:  #bce5d3;
+$active-colorbrown:   #aa8b6c;
+$active-colorpurple:  #672146;
+$active-colorpink:    #f05169;
+$active-colorwhite:   #ffffff;
+$active-colorgrey:    #787878;
+
+$primary: $active-colorpurple; // Thats a sample how you could change a BootStrap variable.
+
+@font-face {
+  font-family: CordaLight;
+  src: url("../../fonts/Hoftype-Corda-Light.otf") format("opentype");
+}
+
+
+$font-family-sans-serif:      "CordLight";
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;

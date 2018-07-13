@@ -1,7 +1,10 @@
 .sass-cache
+.idea
+yarn.lock
+
 
 bower_components
-
+.sass
 node_modules
 
 understrap.zip
@@ -19,9 +22,6 @@ npm-debug.log
 Thumbs.db
 
 .svn
-
 .cvs
-
 *.bak
-
 *.swp
