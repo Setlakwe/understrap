@@ -88,6 +88,15 @@ body {
   }
 }
 
+#main-menu{
+  li{
+    a,a:visited,a:hover,a:active{
+      border: none;
+    }
+  }
+
+}
+
 .navbar {
   ul {
     margin: 0;
@@ -109,12 +118,44 @@ body {
 
 }
 
-.img-container{
+.img-container {
   padding: 15px;
 }
+
 .understrap-read-more-link {
   font-size: 21.5px;
   border-radius: 1px;
   padding: 22px 12px;
   border-color: #000;
+}
+
+#wrapper-footer {
+  font-family: "Poppins", sans-serif;
+}
+
+.site-footer {
+  h3{
+    font-size: 14px;
+    font-weight:700;
+  }
+  ul {
+    li a {
+      font-size: 14px;
+    }
+  }
+}
+
+.textbox-newsletter {
+  font-size: 14px;
+}
+
+.mc-form {
+  padding-top: 10px;
+}
+
+
+#colophon>.row>div{
+  @include media-breakpoint-down(md){
+    padding: 20px;
+  }
 }

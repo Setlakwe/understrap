@@ -30,6 +30,9 @@ $colors: (
 
   .color-#{nth($color,1)} {
     color: #{nth($color,2)};
+    a, a:visited, a:hover, a:active {
+      color: #{nth($color,2)};
+    }
   }
 }
 
