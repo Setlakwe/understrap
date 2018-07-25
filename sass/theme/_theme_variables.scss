@@ -9,24 +9,62 @@ $primary-font: 'Poppins', sans-serif;
 $main-color: #111;
 $body-color: #666;
 
-$active-colorblue:    #9fbfe0;
-$active-colorgreen:   #abc84a;
-$active-colororange:  #ed8b5c;
-$active-colorgreen2:  #bce5d3;
-$active-colorbrown:   #aa8b6c;
-$active-colorpurple:  #672146;
-$active-colorpink:    #f05169;
-$active-colorwhite:   #ffffff;
-$active-colorgrey:    #787878;
+$colors: (
+        'blue': #9fbfe0,
+        'green': #abc84a,
+        'orange': #ed8b5c,
+        'green2': #bce5d3,
+        'brown': #aa8b6c,
+        'purple': #672146,
+        'pink': #f05169,
+        'white': #ffffff,
+        'grey': #dddddd,
+        'dark-grey': #666666
+);
+
+@each $color in $colors {
+
+  .bg-#{nth($color,1)} {
+    background-color: #{nth($color,2)};
+  }
+
+  .color-#{nth($color,1)} {
+    color: #{nth($color,2)};
+  }
+}
+
+$active-colorblue: #9fbfe0;
+$active-colorgreen: #abc84a;
+$active-colororange: #ed8b5c;
+$active-colorgreen2: #bce5d3;
+$active-colorbrown: #aa8b6c;
+$active-colorpurple: #672146;
+$active-colorpink: #f05169;
+$active-colorwhite: #ffffff;
+$active-colorgrey: #dddddd;
 
 $primary: $active-colorpurple; // Thats a sample how you could change a BootStrap variable.
 
 @font-face {
   font-family: CordaLight;
-  src: url("../../fonts/Hoftype-Corda-Light.otf") format("opentype");
+  src: url("../fonts/Hoftype-Corda-Light.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "AvenirLTStd";
+  src: url("../fonts/AvenirLTStd-Light.otf") format("opentype"),
+  url('../fonts/AvenirLTStd-Light.woff') format('woff');
+}
 
-$font-family-sans-serif:      "CordLight";
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:            $font-family-sans-serif !default;
+@font-face {
+  font-family: 'hijrnotes_personal_use_onlyRg';
+  src: url('../fonts/hijrnotes-webfont.woff2') format('woff2'),
+  url('../fonts/hijrnotes-webfont.woff') format('woff'),
+  url("../fonts/Hijrnotes.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-family-sans-serif: "CordLight";
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;

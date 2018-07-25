@@ -9,10 +9,17 @@
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<header class="entry-header">
 
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
+	<header class="entry-header">
+        <div class="text-center">
+
+        <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
 		'</a></h2>' ); ?>
+        </div>
+
+        <div class="text-center img-container">
+            <?php echo get_the_post_thumbnail( $post->ID, 'large' ,array('class' => 'img-responsive ') ); ?>
+        </div>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 
@@ -24,7 +31,6 @@
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="entry-content">
 

@@ -69,3 +69,13 @@ require get_template_directory() . '/inc/woocommerce.php';
  * Load Editor functions.
  */
 require get_template_directory() . '/inc/editor.php';
+
+
+// remove width & height attributes from images
+//
+function remove_img_attr ($html)
+{
+    return preg_replace('/(width|height)="\d+"\s/', "", $html);
+}
+
+add_filter( 'post_thumbnail_html', 'remove_img_attr' );

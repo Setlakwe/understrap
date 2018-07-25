@@ -1,14 +1,120 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
-.btn-secondary{
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: "CordaLight";
+  transition: all 0.2s linear;
+
+}
+
+.btn-secondary {
   @include button-variant($active-colorwhite, $active-colorgrey);
   text-transform: uppercase;
 }
 
-.site-main{
- article{
-   .entry-content{
-     font-size: 1.2em;
-     line-height: 1.2em;
-   }
- }
+.navbar-custom {
+  font-size: 1.0em;
+  background-color: $active-colorgrey;
+  color: #010101;
+  //font-family: "AvenirLTStd";
+  ul {
+    margin: auto 0;
+  }
+}
+
+.blog-title {
+  padding-top: 25px;
+  font-size: 47.77px;
+  .hijrnotes {
+    font-size: 33.35px;
+  }
+}
+
+.entry-title {
+  font-size: 21.5px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  color: #000;
+  a, a:visited, a:hover, a:active {
+    color: #000;
+    border-bottom: 1px solid #000;
+  }
+
+}
+
+.entry-content {
+  font-size: 16px;
+  line-height: 1.2em;
+}
+
+#menu-fullwidth {
+  margin-top: 25px;
+  #main-menu-fullWidth {
+    padding: 12px 0;
+    margin: 0;
+  }
+  display: none;
+  text-align: center;
+  border: 1px solid #000;
+  border-left: none;
+  border-right: none;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 18.57px;
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    li {
+      display: inline-block;
+    }
+  }
+
+}
+
+.hijrnotes {
+  font-family: "hijrnotes_personal_use_onlyRg";
+}
+
+// --- Media query related
+@include media-breakpoint-up(md) {
+  #main-menu {
+    display: none;
+  }
+  #menu-fullwidth {
+    display: block;
+  }
+}
+
+.navbar {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.bg-grey {
+  color: #666;
+  .navbar-toggler {
+    border-color: #666;
+    color: #666;
+  }
+
+  a.nav-link, a.nav-link:visited, a.nav-link:hover, a.nav-link:active {
+    color: #000;
+    border-bottom: 1px solid #000;
+  }
+
+}
+
+.img-container{
+  padding: 15px;
+}
+.understrap-read-more-link {
+  font-size: 21.5px;
+  border-radius: 1px;
+  padding: 22px 12px;
+  border-color: #000;
 }

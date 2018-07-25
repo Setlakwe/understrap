@@ -32,22 +32,26 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+		<nav class="navbar navbar-expand-md bg-grey">
 
 		<?php if ( 'container' == $container ) : ?>
-			<div class="container" >
+			<div class="container align-middle" >
 		<?php endif; ?>
-
+                <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-instagram"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-facebook-square"></i></li>
+                    <li class="list-inline-item"><i class="fa fa-phone"></i> Nous contacter</li>
+                </ul>
 					<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
 
 						<?php if ( is_front_page() && is_home() ) : ?>
 
-							<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+<!--							<h1 class="navbar-brand mb-0"><a rel="home" href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" title="--><?php //echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?><!--" itemprop="url">--><?php //bloginfo( 'name' ); ?><!--</a></h1>-->
 
 						<?php else : ?>
 
-							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
+<!--							<a class="navbar-brand" rel="home" href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" title="--><?php //echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?><!--" itemprop="url">--><?php //bloginfo( 'name' ); ?><!--</a>-->
 
 						<?php endif; ?>
 
@@ -57,7 +61,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					} ?><!-- end custom logo -->
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+                    <i class="fa fa-bars"></i>
 				</button>
 
 				<!-- The WordPress Menu goes here -->
@@ -78,5 +82,27 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php endif; ?>
 
 		</nav><!-- .site-navigation -->
+        <div class="container">
+            <div class="text-center">
+                <div class="blog-title">
+                    <h1><span class="text-uppercase">Signé </span><br><span class="hijrnotes text-capitalize">Silhouette Lingerie</span></h1>
+                </div>
+            </div>
+            <div id="menu-fullwidth">
+                <?php wp_nav_menu(
+                    array(
+                        'theme_location' => 'primary',
+                        'container_class' => 'align-items-stretch',
+                        'container_id' => 'navFullWidth',
+                        'menu_class' => '',
+                        'fallback_cb' => '',
+                        'menu_id' => 'main-menu-fullWidth',
+                        'depth' => 1,
+                        'walker' => new Understrap_WP_Bootstrap_Navwalker(),
+                    )
+                ); ?>
+            </div>
 
+
+        </div>
 	</div><!-- #wrapper-navbar end -->

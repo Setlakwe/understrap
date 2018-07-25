@@ -40,10 +40,12 @@ gulp.task( 'sass', function() {
                 this.emit( 'end' );
             }
         } ) )
-        .pipe(sourcemaps.init({loadMaps: true}))
+        // .pipe(sourcemaps.init({loadMaps: true}))
+        .pipe(sourcemaps.init())
         .pipe( sass( { errLogToConsole: true } ) )
         .pipe( autoprefixer( 'last 2 versions' ) )
-        .pipe(sourcemaps.write(undefined, { sourceRoot: null }))
+        // .pipe(sourcemaps.write(undefined, { sourceRoot: null }))
+        .pipe(sourcemaps.write())
         .pipe( gulp.dest( paths.css ) )
     return stream;
 });
