@@ -41,34 +41,26 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <div class="col-10">
                         <div class="text-left">
                             <ul class="list-inline">
-                                <li class="list-inline-item"><i class="fa fa-instagram"></i></li>
-                                <li class="list-inline-item"><i class="fa fa-facebook-square"></i></li>
-                                <li class="list-inline-item"><i class="fa fa-phone"></i> Nous contacter</li>
+                                <li class="list-inline-item"><a href="https://www.instagram.com/lingeriesilhouette/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.facebook.com/boutiques.silhouette/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.lingeriesilhouette.com/contactez-nous/"><i class="fa fa-phone"></i> Nous contacter</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-2 d-none d-sm-none d-md-block d-lg-block">
                         <div class="text-right">
-                            <a href="/recherche/" class="btn btn-default bg-black color-white">
+                            <a href="/recherche/" class="btn btn-default bg-dark-grey color-white">
                                 <i class="fa fa-search"></i>
                             </a>
                         </div>
                     </div>
-
                 	<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
-
 						<?php if ( is_front_page() && is_home() ) : ?>
-
 <!--							<h1 class="navbar-brand mb-0"><a rel="home" href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" title="--><?php //echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?><!--" itemprop="url">--><?php //bloginfo( 'name' ); ?><!--</a></h1>-->
-
 						<?php else : ?>
-
 <!--							<a class="navbar-brand" rel="home" href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" title="--><?php //echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?><!--" itemprop="url">--><?php //bloginfo( 'name' ); ?><!--</a>-->
-
 						<?php endif; ?>
-
-
 					<?php } else {
 						the_custom_logo();
 					} ?><!-- end custom logo -->
@@ -99,7 +91,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="container">
             <div class="text-center">
                 <div class="blog-title">
-                    <h1><span class="text-uppercase">Signé </span><br><span class="hijrnotes text-capitalize">Silhouette Lingerie</span></h1>
+                    <h1><a href="/"><span class="text-uppercase">Signé </span><br><span class="hijrnotes text-capitalize">Silhouette Lingerie</span></a></h1>
                 </div>
             </div>
             <div id="menu-fullwidth">

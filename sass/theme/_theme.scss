@@ -81,6 +81,7 @@ body {
 
 .hijrnotes {
   font-family: "hijrnotes_personal_use_onlyRg";
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
 // --- Media query related
@@ -165,15 +166,42 @@ body {
 }
 
 .type-page {
-  .entry-title {
+  .entry-title:empty {
     display: none;
   }
 }
-.no-padding{
+
+.entry-meta {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-style: italic;
+}
+
+.blog-title {
+  a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #000;
+
+  }
+
+}
+
+.no-padding {
   padding: 0;
 }
 
-.search-button{
+.search-button {
   padding: 10px;
 }
 
+
+.navbar {
+  ul {
+    li {
+      a, a:visited, a:hover, a:active {
+        text-decoration: none;
+        color: #666;
+      }
+    }
+  }
+}

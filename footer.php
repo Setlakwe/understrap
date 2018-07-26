@@ -12,7 +12,6 @@ $container = get_theme_mod('understrap_container_type');
 ?>
 
 <?php get_template_part('sidebar-templates/sidebar', 'footerfull'); ?>
-
 <div class="wrapper bg-purple color-white" id="wrapper-footer">
     <div class="container">
         <footer class="site-footer" id="colophon">
