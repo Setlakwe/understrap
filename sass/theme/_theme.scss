@@ -93,9 +93,9 @@ body {
   }
 }
 
-#main-menu{
-  li{
-    a,a:visited,a:hover,a:active{
+#main-menu {
+  li {
+    a, a:visited, a:hover, a:active {
       border: none;
     }
   }
@@ -139,9 +139,9 @@ body {
 }
 
 .site-footer {
-  h3{
+  h3 {
     font-size: 14px;
-    font-weight:700;
+    font-weight: 700;
   }
   ul {
     li a {
@@ -158,9 +158,22 @@ body {
   padding-top: 10px;
 }
 
-
-#colophon>.row>div{
-  @include media-breakpoint-down(md){
+#colophon > .row > div {
+  @include media-breakpoint-down(md) {
     padding: 20px;
   }
 }
+
+.type-page {
+  .entry-title {
+    display: none;
+  }
+}
+.no-padding{
+  padding: 0;
+}
+
+.search-button{
+  padding: 10px;
+}
+

@@ -19,7 +19,8 @@ $colors: (
         'pink': #f05169,
         'white': #ffffff,
         'grey': #dddddd,
-        'dark-grey': #666666
+        'dark-grey': #666666,
+        'black': #000
 );
 
 @each $color in $colors {

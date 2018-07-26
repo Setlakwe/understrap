@@ -38,12 +38,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container align-middle" >
 		<?php endif; ?>
-                <ul class="list-inline">
-                    <li class="list-inline-item"><i class="fa fa-instagram"></i></li>
-                    <li class="list-inline-item"><i class="fa fa-facebook-square"></i></li>
-                    <li class="list-inline-item"><i class="fa fa-phone"></i> Nous contacter</li>
-                </ul>
-					<!-- Your site title as branding in the menu -->
+                    <div class="col-10">
+                        <div class="text-left">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><i class="fa fa-instagram"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-facebook-square"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-phone"></i> Nous contacter</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-2 d-none d-sm-none d-md-block d-lg-block">
+                        <div class="text-right">
+                            <a href="/recherche/" class="btn btn-default bg-black color-white">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                	<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
 
 						<?php if ( is_front_page() && is_home() ) : ?>
@@ -60,10 +72,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<?php } else {
 						the_custom_logo();
 					} ?><!-- end custom logo -->
-
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa fa-bars"></i>
-				</button>
+                <div class="col-2 d-block d-sm-block d-md-none d-lg-none">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
 
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
