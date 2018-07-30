@@ -6,22 +6,11 @@
 body {
   font-family: "CordaLight";
   transition: all 0.2s linear;
-
 }
 
 .btn-secondary {
   @include button-variant($active-colorwhite, $active-colorgrey);
   text-transform: uppercase;
-}
-
-.navbar-custom {
-  font-size: 1.0em;
-  background-color: $active-colorgrey;
-  color: #010101;
-  //font-family: "AvenirLTStd";
-  ul {
-    margin: auto 0;
-  }
 }
 
 .blog-title {
@@ -81,7 +70,7 @@ body {
 
 .hijrnotes {
   font-family: "hijrnotes_personal_use_onlyRg";
-  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
+  //text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
 // --- Media query related
@@ -107,6 +96,12 @@ body {
   ul {
     margin: 0;
     padding: 0;
+    li {
+      a, a:visited, a:hover, a:active {
+        text-decoration: none;
+        color: #666;
+      }
+    }
   }
 }
 
@@ -181,9 +176,7 @@ body {
   a, a:visited, a:hover, a:active {
     text-decoration: none;
     color: #000;
-
   }
-
 }
 
 .no-padding {
@@ -194,14 +187,3 @@ body {
   padding: 10px;
 }
 
-
-.navbar {
-  ul {
-    li {
-      a, a:visited, a:hover, a:active {
-        text-decoration: none;
-        color: #666;
-      }
-    }
-  }
-}

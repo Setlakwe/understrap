@@ -43,7 +43,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <ul class="list-inline">
                                 <li class="list-inline-item"><a href="https://www.instagram.com/lingeriesilhouette/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                                 <li class="list-inline-item"><a href="https://www.facebook.com/boutiques.silhouette/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-                                <li class="list-inline-item"><a href="https://www.lingeriesilhouette.com/contactez-nous/"><i class="fa fa-phone"></i> Nous contacter</a></li>
+                                <li class="list-inline-item"><a href="https://www.lingeriesilhouette.com/contactez-nous"><i class="fa fa-phone"></i> Nous contacter</a></li>
                             </ul>
                         </div>
                     </div>
