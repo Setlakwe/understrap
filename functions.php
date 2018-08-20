@@ -73,9 +73,10 @@ require get_template_directory() . '/inc/editor.php';
 
 // remove width & height attributes from images
 //
-function remove_img_attr ($html)
-{
-    return preg_replace('/(width|height)="\d+"\s/', "", $html);
+function remove_thumbnail_dimensions( $html, $post_id, $post_image_id ) {
+    $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
+    $html = preg_replace( '/(sizes|srcset)=\".*\"\s/', "", $html );
+    return $html;
 }
 
-add_filter( 'post_thumbnail_html', 'remove_img_attr' );
+add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10, 3 );

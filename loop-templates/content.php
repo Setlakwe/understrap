@@ -17,16 +17,17 @@
 		'</a></h2>' ); ?>
         </div>
 
-        <div class="text-center img-container">
-            <?php echo get_the_post_thumbnail( $post->ID, 'large' ,array('class' => 'img-responsive ') ); ?>
-        </div>
+        <?php  if ( ! is_single() ) { ?>
+            <div class="text-center img-container">
+                <?php echo get_the_post_thumbnail( $post->ID, null ,array('class' => 'img-responsive ') ); ?>
+            </div>
+        <?php  } ?>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
-
-			<div class="entry-meta">
-				<?php understrap_posted_on(); ?>
-			</div><!-- .entry-meta -->
-
+<!--			<div class="entry-meta">-->
+<!--				--><?php //understrap_posted_on(); ?>
+<!--			</div> -->
+            <!-- .entry-meta -->
 		<?php endif; ?>
 
 	</header><!-- .entry-header -->
