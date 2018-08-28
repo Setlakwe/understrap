@@ -39,17 +39,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="container align-middle" >
 		<?php endif; ?>
                     <div class="col-10">
-                        <div class="text-left">
+                        <div class="text-left color-black">
                             <ul class="list-inline">
                                 <li class="list-inline-item"><a href="https://www.instagram.com/lingeriesilhouette/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                                 <li class="list-inline-item"><a href="https://www.facebook.com/boutiques.silhouette/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-                                <li class="list-inline-item"><a href="https://www.lingeriesilhouette.com/contactez-nous"><i class="fa fa-phone"></i> Nous contacter</a></li>
+                                <li class="list-inline-item"><a href="https://www.lingeriesilhouette.com/contactez-nous"><i class="fa fa-phone"></i></a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-2 d-none d-sm-none d-md-block d-lg-block">
                         <div class="text-right">
-                            <a href="/recherche/" class="btn btn-default bg-dark-grey color-white">
+                            <a href="/recherche/" class="btn btn-default bg-black color-white">
                                 <i class="fa fa-search"></i>
                             </a>
                         </div>
@@ -94,6 +94,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <h1><a href="/"><span class="text-uppercase">Signé </span><br><span class="hijrnotes text-capitalize">Silhouette Lingerie</span></a></h1>
                 </div>
             </div>
+        </div>
+        <div class="container-fluid">
             <div id="menu-fullwidth">
                 <?php wp_nav_menu(
                     array(
@@ -108,6 +110,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     )
                 ); ?>
             </div>
+        </div>
 
 
         </div>

@@ -23,6 +23,10 @@ if ( ! function_exists ( 'understrap_posted_on' ) ) {
 			esc_attr( get_the_modified_date( 'c' ) ),
 			esc_html( get_the_modified_date() )
 		);
+//		$posted_on = sprintf(
+//			esc_html_x( 'Posted on %s', 'post date', 'understrap' ),
+//			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+//		);
 		$posted_on = sprintf(
 			esc_html_x( 'Posted on %s', 'post date', 'understrap' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
