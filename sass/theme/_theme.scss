@@ -190,7 +190,7 @@ body {
 
 article header {
   .entry-title {
-    padding-top:0;
+    padding-top: 0;
   }
   .entry-meta {
     padding-top: 0px;
@@ -201,21 +201,26 @@ article header {
   }
 }
 
-
-.navbar.navbar-expand-md{
+.navbar.navbar-expand-md {
   padding-top: 0px;
   padding-bottom: 0px;
 }
 
-
-.btn{
+.btn {
   border-radius: 0;
 }
 
-.navbar ul li{
-  font-size:20px;
+.navbar ul li {
+  font-size: 20px;
 }
 
-#colophon:first-child{
+#colophon:first-child {
   padding-top: 30px;
+}
+
+article .btn {
+  &:hover {
+    color: $white;
+    background-color: $black;
+  }
 }
