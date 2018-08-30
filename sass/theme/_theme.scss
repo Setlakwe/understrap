@@ -1,4 +1,4 @@
-g// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+g // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 :root {
   font-size: 16px;
 }
@@ -35,7 +35,7 @@ body {
   }
 }
 
-.widget-title{
+.widget-title {
   font-size: 1.35rem;
 }
 
@@ -228,11 +228,25 @@ article .btn {
   }
 }
 
-article .single{
+article .single {
   padding-bottom: 30px;
 }
 
-aside .widget-title{
+aside .widget-title {
   text-align: center;
   font-weight: bold;
+}
+
+.text-widget {
+  .infos-post {
+    margin: -100px auto 0;
+    width: 325px;
+    .titre-post {
+
+    }
+    .read-more {
+      padding: 8px 50px;
+      border: 1px solid $color-text-main $pri;
+    }
+  }
 }
