@@ -1,4 +1,4 @@
-// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+g// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 :root {
   font-size: 16px;
 }
@@ -22,7 +22,7 @@ body {
 }
 
 .entry-title {
-  font-size: 1.75rem;
+  font-size: 1.35rem;
   padding-top: 30px;
   //padding-bottom: 30px;
   text-transform: uppercase;
@@ -33,7 +33,10 @@ body {
     text-decoration: none;
     font-weight: bold;
   }
+}
 
+.widget-title{
+  font-size: 1.35rem;
 }
 
 .entry-content {
