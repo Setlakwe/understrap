@@ -1,252 +1,305 @@
-g // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 :root {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 body {
-  font-family: "CordaLight";
-  transition: all 0.2s linear;
+    font-family: "CordaLight";
+    transition: all 0.2s linear;
 }
 
 .btn-secondary {
-  @include button-variant($active-colorwhite, $active-colorgrey);
-  text-transform: uppercase;
+    @include button-variant($active-colorwhite, $active-colorgrey);
+    text-transform: uppercase;
 }
 
 .blog-title {
-  padding-top: 25px;
-  font-size: 47.77px;
-  .hijrnotes {
-    font-size: 33.35px;
-  }
+    padding-top: 25px;
+    font-size: 47.77px;
+    .hijrnotes {
+        font-size: 33.35px;
+    }
 }
 
 .entry-title {
-  font-size: 1.35rem;
-  padding-top: 30px;
-  //padding-bottom: 30px;
-  text-transform: uppercase;
-  font-weight: bold;
-  a, a:visited, a:hover, a:active {
-    color: $color-text-main;
-    //border-bottom: 1px solid #000;
-    text-decoration: none;
+    font-size: 1.35rem;
+    padding-top: 30px;
+    //padding-bottom: 30px;
+    text-transform: uppercase;
     font-weight: bold;
-  }
+    a, a:visited, a:hover, a:active {
+        color: $color-text-main;
+        //border-bottom: 1px solid #000;
+        text-decoration: none;
+        font-weight: bold;
+    }
 }
 
 .widget-title {
-  font-size: 1.35rem;
+    font-size: 1.35rem;
 }
 
 .entry-content {
-  font-size: 16px;
-  line-height: 1.2em;
+    font-size: 16px;
+    line-height: 1.2em;
 }
 
 #menu-fullwidth {
-  margin-top: 25px;
-  #main-menu-fullWidth {
-    padding: 4px 0;
-    margin: 0;
-  }
-  display: none;
-  text-align: center;
-  border: 1px solid #000;
-  border-left: none;
-  border-right: none;
-  text-transform: uppercase;
-  width: 100%;
-  font-size: 18.57px;
-  ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    li {
-      display: inline-block;
-      a, a:visited, a:hover, a:active {
-        color: #000;
-        text-decoration: none;
-      }
+    margin-top: 25px;
+    #main-menu-fullWidth {
+        padding: 4px 0;
+        margin: 0;
     }
-  }
+    display: none;
+    text-align: center;
+    border: 1px solid #000;
+    border-left: none;
+    border-right: none;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 18.57px;
+    ul {
+        margin-top: 0;
+        margin-bottom: 0;
+        li {
+            display: inline-block;
+            a, a:visited, a:hover, a:active {
+                color: #000;
+                text-decoration: none;
+            }
+        }
+    }
 
 }
 
 .hijrnotes {
-  font-family: "hijrnotes_personal_use_onlyRg";
-  //text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
+    font-family: "hijrnotes_personal_use_onlyRg";
+    //text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
 // --- Media query related
 @include media-breakpoint-up(md) {
-  #main-menu {
-    display: none;
-  }
-  #menu-fullwidth {
-    display: block;
-  }
+    #main-menu {
+        display: none;
+    }
+    #menu-fullwidth {
+        display: block;
+    }
 }
 
 #main-menu {
-  li {
-    a, a:visited, a:hover, a:active {
-      border: none;
+    li {
+        a, a:visited, a:hover, a:active {
+            border: none;
+        }
     }
-  }
 
 }
 
 .navbar {
-  ul {
-    margin: 0;
-    padding: 0;
-    li {
-      a, a:visited, a:hover, a:active {
-        text-decoration: none;
-        color: $black;
-      }
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            a, a:visited, a:hover, a:active {
+                text-decoration: none;
+                color: $black;
+            }
+        }
     }
-  }
 }
 
 .bg-grey {
-  color: #666;
-  .navbar-toggler {
-    border-color: #666;
     color: #666;
-  }
+    .navbar-toggler {
+        border-color: #666;
+        color: #666;
+    }
 
-  a.nav-link, a.nav-link:visited, a.nav-link:hover, a.nav-link:active {
-    color: #000;
-    border-bottom: 1px solid #000;
-  }
+    a.nav-link, a.nav-link:visited, a.nav-link:hover, a.nav-link:active {
+        color: #000;
+        border-bottom: 1px solid #000;
+    }
 
 }
 
 .img-container {
-  padding: 15px;
+    padding: 15px;
 }
 
 .understrap-read-more-link {
-  font-size: 21.5px;
-  border-radius: 1px;
-  padding: 12px 12px;
-  border-color: #000;
+    font-size: 21.5px;
+    border-radius: 1px;
+    padding: 12px 12px;
+    border-color: #000;
 }
 
 #wrapper-footer {
-  font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .site-footer {
-  h3 {
-    font-size: 14px;
-    font-weight: 700;
-  }
-  ul {
-    li a {
-      font-size: 14px;
+    h3 {
+        font-size: 14px;
+        font-weight: 700;
     }
-  }
+    ul {
+        li a {
+            font-size: 14px;
+        }
+    }
 }
 
 .textbox-newsletter {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 .mc-form {
-  padding-top: 10px;
+    padding-top: 10px;
 }
 
 #colophon > .row > div {
-  @include media-breakpoint-down(md) {
-    padding: 20px;
-  }
+    @include media-breakpoint-down(md) {
+        padding: 20px;
+    }
 }
 
 .type-page {
-  .entry-title:empty {
-    display: none;
-  }
+    .entry-title:empty {
+        display: none;
+    }
 }
 
 .entry-meta {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-style: italic;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-style: italic;
 }
 
 .blog-title {
-  a, a:visited, a:hover, a:active {
-    text-decoration: none;
-    color: #000;
-  }
+    a, a:visited, a:hover, a:active {
+        text-decoration: none;
+        color: #000;
+    }
 }
 
 .no-padding {
-  padding: 0;
+    padding: 0;
 }
 
 .search-button {
-  padding: 10px;
+    padding: 10px;
 }
 
 article header {
-  .entry-title {
-    padding-top: 0;
-  }
-  .entry-meta {
-    padding-top: 0px;
-  }
+    .entry-title {
+        padding-top: 0;
+    }
+    .entry-meta {
+        padding-top: 0px;
+    }
 
-  .img-container {
-    padding: 10px 0;
-  }
+    .img-container {
+        padding: 10px 0;
+    }
 }
 
 .navbar.navbar-expand-md {
-  padding-top: 0px;
-  padding-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .btn {
-  border-radius: 0;
+    border-radius: 0;
 }
 
 .navbar ul li {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 #colophon:first-child {
-  padding-top: 30px;
+    padding-top: 30px;
 }
 
 article .btn {
-  &:hover {
-    color: $white;
-    background-color: $black;
-  }
+    &:hover {
+        color: $white;
+        background-color: $black;
+    }
 }
 
 article .single {
-  padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 aside .widget-title {
-  text-align: center;
-  font-weight: bold;
+    text-align: center;
+    font-weight: bold;
 }
 
 aside .text-widget {
-  .infos-post {
-    margin: -100px auto 0;
-    width: 325px;
-    .titre-post {
+    .infos-post {
+        margin: -100px auto 0;
+        width: 325px;
+        .titre-post {
 
+        }
+        .read-more {
+            padding: 8px 50px;
+            border: 1px solid $color-text-main;
+        }
     }
-    .read-more {
-      padding: 8px 50px;
-      border: 1px solid $color-text-main;
-    }
-  }
 }
+aside{
+    .separators{
+        margin:15px auto;
+        border:1px solid $black;
+        border-left:none;
+        border-right:none;
+        width:80%;
+        height:10px;
+    }
+    .sidebar-box{
+        margin-top:32px;
+        .infos-post{
+            width:80%;
+            background-color:$white;
+            margin:-100px auto 0;
+            position:relative;
+            z-index:10;
+            padding:15px 60px 0;
+            .categorie-post{
+                font-weight:900;
+                font-size:20px;
+                letter-spacing:0.05em;
+                text-transform: uppercas;
+                margin-bottom:10px;
+            }
+            .titre-post{
+                font-size:26px;
+                letter-spacing:0.05em;
+                text-transform:uppercase;
+                margin-bottom:20px;
+            }
+            .read-more{
+                display:inline-block;
+                padding: 8px 20px;
+                font-size:14px;
+                border: 1px solid $black;
+                color: $black;
+                width:120%;
+                margin-left:-10%;
+            } 
+        }
+        
+    }
+}
+
+article{
+    padding-bottom:20px;
+}
+article:not(:first-child){
+   padding-top:20px;
+   border-top: 1px solid $black;
+}
+

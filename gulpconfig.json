@@ -1,7 +1,11 @@
 {
   "browserSyncOptions" : {
-    "proxy": "localhost/",
-    "notify": false
+    "https": true,
+    "notify": false,
+    "open": false,
+    "proxy": "blog.lingeriesilhouette.com",
+    "host": "blog.lingeriesilhouette.com",
+    "port": "8443"
   },
   "browserSyncWatchFiles" : [
     "./css/*.min.css",
