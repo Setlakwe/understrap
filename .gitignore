@@ -2,7 +2,6 @@
 .idea
 yarn.lock
 
-
 bower_components
 .sass
 node_modules
