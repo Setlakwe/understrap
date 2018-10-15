@@ -4,8 +4,18 @@
 }
 
 body {
-    font-family: "CordaLight";
+    font-family: 'Open Sans', sans-serif;
     transition: all 0.2s linear;
+    h1,h2,h3,h4,h5,h6{
+        font-family:'Abril Fatface';
+        color:$title-color
+    }
+    .vce-post-description--title{
+        h1,h2,h3,h4,h5,h6{
+            font-family:'Abril Fatface', cursive;
+            color:$title-color
+        }
+    }
 }
 
 .btn-secondary {
@@ -16,6 +26,9 @@ body {
 .blog-title {
     padding-top: 25px;
     font-size: 47.77px;
+    span{
+        font-family:"Times new roman";
+    }
     .hijrnotes {
         font-size: 33.35px;
     }
@@ -28,7 +41,7 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     a, a:visited, a:hover, a:active {
-        color: $color-text-main;
+        color: $title-color;
         //border-bottom: 1px solid #000;
         text-decoration: none;
         font-weight: bold;
@@ -73,7 +86,7 @@ body {
 }
 
 .hijrnotes {
-    font-family: "hijrnotes_personal_use_onlyRg";
+    font-family: "hijrnotes_personal_use_onlyRg" !important;
     //text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
@@ -138,9 +151,13 @@ body {
 }
 
 .site-footer {
+    *{
+        color:white;
+        font-family: "Poppins", sans-serif;
+    }
     h3 {
-        font-size: 14px;
-        font-weight: 700;
+        font-size: 18px;
+        font-weight: bold;
     }
     ul {
         li a {
@@ -150,7 +167,7 @@ body {
 }
 
 .textbox-newsletter {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .mc-form {
@@ -245,7 +262,11 @@ aside{
         width:80%;
         height:10px;
     }
+    .widget-title{
+        color:$title-color;
+    }
     .sidebar-box{
+        
         margin-top:32px;
         .infos-post{
             width:80%;
@@ -258,7 +279,7 @@ aside{
                 font-weight:900;
                 font-size:1.1vw;
                 letter-spacing:0.05em;
-                 text-transform: uppercas;
+                text-transform: uppercas;
                 margin-bottom:10px;
             }
             .titre-post{
@@ -307,8 +328,3 @@ article:not(:first-child){
     }
 }
 
-article.vce-posts-grid-item{
-    *{
-        font-family:"CordaLight";
-    }
-}

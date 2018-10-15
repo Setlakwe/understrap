@@ -54,11 +54,6 @@ $container = get_theme_mod('understrap_container_type');
 </div>
 </div><!-- #page we need this extra closing tag here -->
 
-<script id="__bs_script__">
-//<![CDATA[
-    document.write("<script async src='https://HOST:8443/browser-sync/browser-sync-client.js?v=2.24.7'><\/script>".replace("HOST", location.hostname));
-//]]>
-</script>
 
 <?php wp_footer(); ?>
 
