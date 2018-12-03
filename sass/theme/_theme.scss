@@ -21,7 +21,16 @@ body {
 
             color:$title-color;
         }
+        h3{
+            font-size:1.35rem;
+            font-weight:700;
+        }
     }
+    .vce-post-description--excerpt{
+        font-family: 'Quicksand', sans-serif;
+        line-height:1.2em;
+    }
+
 }
 
 .btn-secondary {
