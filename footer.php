@@ -57,6 +57,12 @@ $container = get_theme_mod('understrap_container_type');
 
 <?php wp_footer(); ?>
 
+<script id="__bs_script__">
+//<![CDATA[
+    document.write("<script async src='https://HOST:8443/node_modules/browser-sync/client/dist/index.min.js'><\/script>".replace("HOST", location.hostname));
+//]]>
+</script>
+
 </body>
 
 </html>
